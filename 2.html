@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		td, th{
+			border: 3px solid red;
+		}
+
+
+		table{
+			border-collapse: collapse;
+		}
+
+		#list1{
+			background-color:yellow;
+			color: black;
+		}
+
+		#list2{
+			background-color: black;
+			color: white;
+			font-weight: bold;
+		}
+
+
+		#table1{
+			margin-right: auto;
+		}
+		#table2{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#table3{
+			margin-left: auto;
+		}
+
+	</style>
+</head>
+
+
+<body>
+
+
+	<table id="table1">
+		<caption>1번째</caption>
+
+		<tr><th id="list1">100</th> <th id="list1">200</th><th id ="list1">300</th><th id ="list1">400</th></tr>
+		<tr><td id="list2" rowspan="2">5</td><td id ="list1">6</td><td id="list2">7</td><td id="list1">8</td></tr>
+		<tr><td id= "list2">9</td><td id="list1">10</td></tr>
+		<td id="list2" rowspan="2">11</td></tr>
+		<tr><td id="list1">12</td><td id="list2">13</td><td id="list1">14</td></tr>
+		<tr><td id="list2" colspan="4" align="center"><MARQUEE direction="right"><a href="https://www.pcu.ac.kr/kor" target="_blank">15</a></MARQUEE></td></tr>
+		<tr><td id="list1" rowspan="2">16</td><td id="list2" rowspan="3">17</td><td id="list1">18</td><td id="list2">19</td></tr>
+		<tr><td id="list1" rowspan="2">20</td><td id="list2">21</td></tr>
+		<tr><td id="list1">22</td><td id="list2">23</td></tr>
+		<caption align="bottom">표1</caption>
+	</table>
+
+
+	<table id="table2">
+		<caption>2번째</caption>
+
+		<tr><th id="list1">100</th> <th id="list1">200</th><th id ="list1">300</th><th id ="list1">400</th></tr>
+		<tr><td id="list2" rowspan="2">5</td><td id ="list1">6</td><td id="list2">7</td><td id="list1">8</td></tr>
+		<tr><td id= "list2">9</td><td id="list1">10</td></tr>
+		<td id="list2" rowspan="2">11</td></tr>
+		<tr><td id="list1">12</td><td id="list2">13</td><td id="list1">14</td></tr>
+		<tr><td id="list2" colspan="4" align="center"><MARQUEE direction="left"><a href="https://www.pcu.ac.kr/kor" target="_blank">15</a></MARQUEE></td></tr>
+		<tr><td id="list1" rowspan="2">16</td><td id="list2" rowspan="3">17</td><td id="list1">18</td><td id="list2">19</td></tr>
+		<tr><td id="list1" rowspan="2">20</td><td id="list2">21</td></tr>
+		<tr><td id="list1">22</td><td id="list2">23</td></tr>
+		<caption align="bottom">표2</caption>
+	</table>
+
+
+	<table id="table3">
+		<caption>3번째</caption>
+		<tr><th id="list1">100</th> <th id="list1">200</th><th id ="list1">300</th><th id ="list1">400</th></tr>
+		<tr><td id="list2" rowspan="2">5</td><td id ="list1">6</td><td id="list2">7</td><td id="list1">8</td></tr>
+		<tr><td id= "list2">9</td><td id="list1">10</td></tr>
+		<td id="list2" rowspan="2">11</td></tr>
+		<tr><td id="list1">12</td><td id="list2">13</td><td id="list1">14</td></tr>
+		<tr><td id="list2" colspan="4" align="center"><a href="https://www.pcu.ac.kr/kor" target="_blank">15</a></td></tr>
+		<tr><td id="list1" rowspan="2">16</td><td id="list2" rowspan="3">17</td><td id="list1">18</td><td id="list2">19</td></tr>
+		<tr><td id="list1" rowspan="2">20</td><td id="list2">21</td></tr>
+		<tr><td id="list1">22</td><td id="list2">23</td></tr>
+		<caption align="bottom">표3</caption>
+	</table>
+</body>
+</html>

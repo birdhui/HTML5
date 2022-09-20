@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<style>
+	a{
+		color: white;
+		text-decoration-line: underline;
+		text-decoration-color: white;
+	}
+	th,td{
+		border: solid 5px red; 
+	}
+	#one,#second,#three{
+		font-weight: normal;
+	}
+	#one_1, #second_1, #three_1{
+		font-weight: bold;
+		border-collapse: collapse;
+		text-align: left;
+	}
+	#odd{
+		background-color: black;
+		color: white;
+		text-decoration-line: underline;
+		text-decoration-color: white; 
+	}
+	#even{
+		background-color: yellow;
+		color: black;
+		text-decoration-line: overline;
+		text-decoration-color: black;
+	}
+</style>
+<head>
+	<title>2022.04.13_test1</title>
+</head>
+<body>
+	<div id="one" align="left";>
+		(표1)
+		<table id="one_1">
+			<caption></caption>
+			<tr> <th id="even">100</th> <th id="even">200</th> <th id="even">300</th> <th id="even">400</th> 				</tr>
+			<tr> <td rowspan="2" id="odd">5</td> <td id="even">6</td> <td id="odd">7</td> <td id="even">8</td> 				</tr>
+			<tr> 				 		<td id="odd">9</td> <td id="even">10</td> <td id="odd" rowspan="2"><MARQUEE height="60" direction="up" behavior="alternate" scrollDelay="100">11</MARQUEE></td>  </tr>
+			<tr> <td id="even">12</td> 			<td id="odd">13</td> <td id="even">14</td> 					    </tr>
+			<tr> <td colspan="4" id="odd";><MARQUEE behavior="alternate" scrollDelay="100"><a href="https://www.pcu.ac.kr/kor" target="_blank">15</a></MARQUEE></td>					</tr>
+			<tr> <td id="even" rowspan="2">16</td> <td id="odd">17</td> <td id="even">18</td> <td id="odd">19</td> 			</tr>
+			<tr> 						<td id="even">20</td> <td id="odd" rowspan="2">21</td> <td id="even">22</td> </tr>
+			<tr> <td id="odd">23</td> <td id="even">24</td> 									<td id="odd">25</td> </tr>
+		</table>
+		왼쪽 정렬
+	</div>
+	<div id="second" align="center";>
+		(표2)
+		<table id="second_1">
+			<tr> <th id="even">100</th> <th id="even">200</th> <th id="even">300</th> <th id="even">400</th> 				</tr>
+			<tr> <td rowspan="2" id="odd">5</td> <td id="even">6</td> <td id="odd">7</td> <td id="even">8</td> 				</tr>
+			<tr> 				 		<td id="odd">9</td> <td id="even">10</td> <td id="odd" rowspan="2"><MARQUEE height="60" direction="up" behavior="alternate" scrollDelay="100">11</MARQUEE></td>  </tr>
+			<tr> <td id="even">12</td> 			<td id="odd">13</td> <td id="even">14</td> 					    </tr>
+			<tr> <td colspan="4" style="text-align: center;" id="odd";><MARQUEE behavior="alternate" scrollDelay="100"><a href="https://www.pcu.ac.kr/kor" target="_blank">15</a></MARQUEE></td>					</tr>
+			<tr> <td id="even" rowspan="2">16</td> <td id="odd">17</td> <td id="even">18</td> <td id="odd">19</td> 			</tr>
+			<tr> 						<td id="even">20</td> <td id="odd" rowspan="2">21</td> <td id="even">22</td> </tr>
+			<tr> <td id="odd">23</td> <td id="even">24</td>									<td id="odd">25</td> </tr>
+		</table>
+		중앙 정렬
+	</div>
+	<div id="three" align="right";>
+		(표3)
+		<table id="three_1">
+			<tr> <th id="even">100</th> <th id="even">200</th> <th id="even">300</th> <th id="even">400</th> 				</tr>
+			<tr> <td rowspan="2" id="odd">5</td> <td id="even">6</td> <td id="odd">7</td> <td id="even">8</td> 				</tr>
+			<tr> 				 		<td id="odd">9</td> <td id="even">10</td> <td id="odd" rowspan="2"><MARQUEE height="60" direction="up" behavior="alternate" scrollDelay="100">11</MARQUEE></td>  </tr>
+			<tr> <td id="even">12</td> 			<td id="odd">13</td> <td id="even">14</td> 					    </tr>
+			<tr> <td colspan="4" style="text-align: center;" id="odd";><MARQUEE behavior="alternate" scrollDelay="100"><a href="https://www.pcu.ac.kr/kor" target="_blank">15</a></MARQUEE></td>					</tr>
+			<tr> <td id="even" rowspan="2">16</td> <td id="odd">17</td> <td id="even">18</td> <td id="odd">19</td> 			</tr>
+			<tr> 						<td id="even">20</td> <td id="odd" rowspan="2">21</td> <td id="even">22</td> </tr>
+			<tr> <td id="odd">23</td> <td id="even">24</td>									<td id="odd">25</td> </tr>
+		</table>
+		오른쪽 정렬
+	</div>
+</body>
+</html>
+
+<!-- 
+	- table align 쓰는 방법은 영어로 구글에 검색해보자. 참고: https://www.geeksforgeeks.org/html-table-align-attribute/
+	- https://sas-study.tistory.com/122
+	- 시험공부:  W3 School 에 나오는 (실습에 사용했던) 코드는 다 외우기.
+	- caption 태그는 뭐지??
+	- http://www.tcpschool.com/html-tags/caption
+	
+	- https://coding-factory.tistory.com/180
+
+	- https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=start3535&logNo=30171932178
+
+	- tag에는 하나의 id만 지정할 수 있다.
+
+	-https://hianna.tistory.com/482
+
+	-https://developer.mozilla.org/ko/docs/Web/HTML/Element/caption
+-->

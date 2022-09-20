@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		table{
+			border: 1px solid black;
+		}
+
+		td, th{
+			border-color: rgb(0, 153, 0);
+		}
+
+		#table1{
+			border-collapse: separate;
+		}
+	</style>
+</head>
+<body>
+	<table id="table1">
+		<tr><th>분류</th>             <th>항목</th><td>1</td><td>2</td></tr>
+		<tr><td rowspan="3">과일</td> <td>감귤</td><td>3</td><td>4</td></tr>
+		<tr>                          <td>바나나</td><td>5</td><td rowspan="2">6</td></tr>
+		<tr>                          <td>레몬</td><td>7</td></tr>
+	</table>
+	<table id="table2">
+		<tr><td>색상</td> <td>9</td><td>10</td></tr>
+		<tr><td rowspan="2">채소</td> <td>마늘</td><td>11</td>&nbsp;&nbsp;</td><td>12</td></tr>
+		<tr>                          <td>양파</td><td rowspan="2">13</td><td>14</td></tr>
+		<tr><td>이름</td><td>홍준기</td><td>15</td></tr>
+	</table>
+</body>
+</html>
