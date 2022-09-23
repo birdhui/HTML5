@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<style>
+	table, td, th{
+		border:  5px solid red;
+		border-collapse: collapse;
+		font-weight: bold;
+	}
+
+	a{
+		color: white;
+	}
+
+	#tb_1{
+		margin-right: auto;
+	}
+
+	#tb_2{
+		background: yellow;
+		color: black;
+		text-decoration: overline;
+	}
+
+	#tb_3{
+		background: black;
+		color: white;
+		text-decoration: underline;
+	}
+
+	#tb_4{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#tb_5{
+		margin-left: auto;
+	}
+
+	#cap1{
+		font-weight: normal;
+		text-align: left;
+	}
+
+	#cap2{
+		font-weight: normal;
+		text-align: center;
+	}
+
+	#cap3{
+		font-weight: normal;
+		text-align: right;
+	}
+
+</style>
+<body>
+	<table id="tb_1">
+		<caption id="cap1">(표1)</caption>
+		<tr><th id="tb_2">100</th><th id="tb_2">200</th><th id="tb_2">300</th><th id="tb_2">400</th></tr>
+		<tr><td id="tb_3" rowspan="2">5</td><td id="tb_2">6</td><td id="tb_3">7</td><td id="tb_2">8</td></tr>
+		<tr>								<td id="tb_3">9</td><td id="tb_2">10</td><td  id="tb_3" rowspan="2"><marquee direction=up scrolldelay="5">11</marquee></td></tr>
+		<tr><td id="tb_2">12</td><td id="tb_3">13</td><td id="tb_2">14</td></tr>
+		<tr><td  id="tb_3" colspan="4" align="center"><marquee scrolldelay="5"><a href="https://www.pcu.ac.kr/kor" target="_blank">15</a></marquee></td><!-- <td>16</td><td>17</td><td>18</td></tr> -->
+		<tr><td  id="tb_2" rowspan="2">16</td><td id="tb_3">17</td><td id="tb_2">18</td><td id="tb_3">19</td></tr>
+		<tr><td id="tb_2">20</td><td rowspan="2" id="tb_3">21</td><td id="tb_2">22</td></tr>
+		<tr><td id="tb_3">23</td><td id="tb_2">24</td><td id="tb_3">25</td></tr>
+		<caption id="cap1" style="caption-side: bottom;">왼쪽정렬</caption>
+	</table>
+
+	<table id="tb_4">
+		<caption id="cap2">(표2)</caption>
+		<tr><th id="tb_2">100</th><th id="tb_2">200</th><th id="tb_2">300</th><th id="tb_2">400</th></tr>
+		<tr><td id="tb_3" rowspan="2">5</td><td id="tb_2">6</td><td id="tb_3">7</td><td id="tb_2">8</td></tr>
+		<tr>								<td id="tb_3">9</td><td id="tb_2">10</td><td  id="tb_3" rowspan="2"><marquee direction=up scrolldelay="5">11</marquee></td></tr>
+		<tr><td id="tb_2">12</td><td id="tb_3">13</td><td id="tb_2">14</td></tr>
+		<tr><td  id="tb_3" colspan="4" align="center"><marquee scrolldelay="5"><a href="https://www.pcu.ac.kr/kor" target="_blank">15</a></marquee></td><!-- <td>16</td><td>17</td><td>18</td></tr> -->
+		<tr><td  id="tb_2" rowspan="2">16</td><td id="tb_3">17</td><td id="tb_2">18</td><td id="tb_3">19</td></tr>
+		<tr><td id="tb_2">20</td><td rowspan="2" id="tb_3">21</td><td id="tb_2">22</td></tr>
+		<tr><td id="tb_3">23</td><td id="tb_2">24</td><td id="tb_3">25</td></tr>
+		<caption id="cap2" style="caption-side: bottom;">중앙정렬</caption>
+	</table>
+
+	<table id="tb_5">
+		<caption id="cap3">(표3)</caption>
+		<tr><th id="tb_2">100</th><th id="tb_2">200</th><th id="tb_2">300</th><th id="tb_2">400</th></tr>
+		<tr><td id="tb_3" rowspan="2">5</td><td id="tb_2">6</td><td id="tb_3">7</td><td id="tb_2">8</td></tr>
+		<tr>								<td id="tb_3">9</td><td id="tb_2">10</td><td  id="tb_3" rowspan="2"><marquee direction=up scrolldelay="5">11</marquee></td></tr>
+		<tr><td id="tb_2">12</td><td id="tb_3">13</td><td id="tb_2">14</td></tr>
+		<tr><td  id="tb_3" colspan="4" align="center"><marquee scrolldelay="5"><a href="https://www.pcu.ac.kr/kor" target="_blank">15</a></marquee></td><!-- <td>16</td><td>17</td><td>18</td></tr> -->
+		<tr><td  id="tb_2" rowspan="2">16</td><td id="tb_3">17</td><td id="tb_2">18</td><td id="tb_3">19</td></tr>
+		<tr><td id="tb_2">20</td><td rowspan="2" id="tb_3">21</td><td id="tb_2">22</td></tr>
+		<tr><td id="tb_3">23</td><td id="tb_2">24</td><td id="tb_3">25</td></tr>
+		<caption id="cap3" style="caption-side: bottom;">오른쪽정렬</caption>
+	</table>
+</body>
+</html>
+
+<!-- 
+	- table align 쓰는 방법은 영어로 구글에 검색해보자. 참고: https://www.geeksforgeeks.org/html-table-align-attribute/
+	- https://sas-study.tistory.com/122
+	- 시험공부:  W3 School 에 나오는 (실습에 사용했던) 코드는 다 외우기.
+	- caption 태그는 뭐지??
+	- http://www.tcpschool.com/html-tags/caption
+	
+	- https://coding-factory.tistory.com/180
+
+	- https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=start3535&logNo=30171932178
+
+	- tag에는 하나의 id만 지정할 수 있다.
+
+	-https://hianna.tistory.com/482
+
+	-https://developer.mozilla.org/ko/docs/Web/HTML/Element/caption
+-->

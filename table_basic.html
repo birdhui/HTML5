@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		table, td, th{
+			border: 1px solid black;
+		}
+
+		#table1{
+			border-collapse: separate;
+			border: 3px solid indianred;
+			text-align: right;
+			text-decoration: underline;
+			font-size: 20px;
+			text-shadow: 1px 1px 3px gray;
+			font-weight: bolder;
+			font-style: italic;
+			font-family: Times;
+			color: rgb(253, 180, 125);
+			color: #fff000; 
+			line-height: 180%; <!-- 위, 아래 줄간격 -->
+		}
+
+		#table2{
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h2>Separate</h2>
+	<table id="table1">
+		<tr> <th>성</th><th>name</th><th>학번</th><th>나이</th></tr>
+		<tr> <td>곽</td><td>세희</td><td>2261062</td><td>20</td></tr>
+		<tr> <td>임</td><td>소정</td><td>2261012</td><td>20</td></tr>
+		<tr> <td>김</td><td>민선</td><td>2261027</td><td>20</td></tr>
+	</table>
+
+	<h2>Collapse</h2>
+	<table id="table2">
+		<tr> <th>성</th><th>이름</th><th>학번</th><th>나이</th></tr>
+		<tr> <td>곽</td><td>세희</td><td>2261062</td><td>20</td></tr>
+		<tr> <td>임</td><td>소정</td><td>2261012</td><td>20</td></tr>
+		<tr> <td>김</td><td>민선</td><td>2261027</td><td>20</td></tr>
+	</table>
+</body>
+</html>
