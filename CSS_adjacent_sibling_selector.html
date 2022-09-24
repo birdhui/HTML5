@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div + p {
+			background-color: lightgoldenrodyellow;
+		}
+	</style>
+	<!-- 인접 형제 선택자
+		: 어떤 요소의 형제 요소 중 첫번째 요소를 선택하며
+		+ 문자를 사용해 선택자를 표현한다.
+
+		<div> 요소 바로 뒤에 작성된 <p>영역을 선택하는 예제이다. -->
+</head>
+<body>
+	<div>
+		<p> 문단 1 </p>
+		<p> 문단 2 </p>
+	</div>
+	<p> 문단 3 </p>
+	<!-- <div> 시작하는 요소 뒤가 아닌
+	</div> 끝나는 요소 뒤에 나오는 <p> 속성에 적용됨 -->
+	<p> 문단 4 </p>
+</body>
+</html>

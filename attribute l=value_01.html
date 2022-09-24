@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		[class|=tag] {
+			background-color: yellow;
+		}
+	</style>
+	<!-- [attribute |= value] 선택자는 attribute라는 특성 값을 가지고 있으며,
+		그 특성값이 정확히 "value"이거나 "value-"" 로 시작하는 요소를 선택한다.
+
+		즉, "tag"나 "tag-" 로 시작하는 모든 요소를 선택한다. -->
+</head>
+<body>
+	<p class="tag">tag</p> <!-- CSS 적용 O -->
+	<p class="tag-paragraph">tag</p> <!-- CSS 적용 O -->
+	<p class="tag tagtag">tag</p> <!-- "tag-"로 시작해야 적용이 되고 "tag "공백으로 하면 적용안됨 -->
+	<p class="tagtag-tag">tag</p> <!-- CSS 적용 X -->
+	<p class="tagparagraph">tag</p>
+	<!-- CSS 적용 X 
+		"tagparagraph"는 "tag"가 단어 단위로 작성되어 있지 않기 때문에 CSS가 적용되지 않는다. -->
+	<p class="paragraph-tag">tag</p>
+	<!-- CSS 적용 X
+		"tag"가 뒷부분에 작성되어 있어도 CSS가 적용되지 않는다. -->
+	<p class="lalalal-tag">tag</p> <!-- CSS 적용 X -->
+	<p class="tag-lalal">tag</p> <!-- CSS 적용 O -->
+</body>
+</html>
+
+<!-- [attribute ~= value]와 [attribute |= value]의 차이점
+[attribute]는 "attribute"라는 이름의 특성을 가진 요소를 선택한다.
+[attribute = value]는 이름의 특성 값이 정확히 "value"인 요소를 선택한다.
+[attribute ~= value]는 공백으로 구분한 여러 개의 값에도 CSS를 적용한다.
+[attribute |= value]는 공백으로 구분한 값에 CSS가 적용 X, "value"나 "value-"로 시작해야 CSS를 적용한다. -->

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#box {
+			border: 20px solid purple;
+			margin-top: 10px;
+			width: 30%;
+			position: relative;			
+			background-image: url("logo.png");
+			background-size: 100%;
+			padding-left: 10px;	
+			padding-bottom: 10px;	
+		}
+		#box:hover{
+			background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("logo.png");
+		}	
+	</style>
+</head>
+<body>
+	<h2>입력 데이터 초기화 버튼</h2>
+	<form>
+		<div id="box">
+			<p>ID:<input type="text"></p>
+			<p>비밀번호:<input type="password"></p>
+			<p>생년 월일:<input type="date"></p>
+			<p>퍼스널 컬러:<input type="color"></p>
+		</div>
+		<div id="box">
+			<p>이미지 업로드:</p>
+			<input type="file">
+		</div>
+		<input type="submit" value="전송">
+		<input type="reset" value="리셋">
+	</form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css"> 
+		div {
+			height: 200px;
+			width: 200px;
+			background-color: yellow;
+			color: white;
+			font-size: 50px;
+			text-align: center;
+		} 
+		/*
+		img {
+			max-width: 100%;
+		}
+		.a {
+			width: 200px;
+			margin: 0px auto;
+			overflow: hidden;
+			transition: all 0.2s linear;
+		}
+		.a:hover img {
+			transform: scale(1.4);
+		} */
+      span {
+        padding: 10px;
+        border: 1px solid #bcbcbc;
+        cursor: pointer;
+      }
+    </style>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        $( 'span' ).hover(
+          function () {
+            $( this ).animate( {
+              fontSize: '50px'
+            }, 500 );
+          }, function () {
+            $( this ).animate( {
+              fontSize: '1em'
+            }, 500 );
+          }
+        );
+      } );
+    </script>
+  </head>
+  <body>
+    <p>Lorem <span>문단</span> Dolor</p>
+  </body>
+</html>
