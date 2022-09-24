@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<style>
+		table, th, td {
+			border:  2px solid green;
+			border-collapse:  collapse;
+		}
+
+		#tb1 {
+			border-color: black;
+		}
+	</style>
+</head>
+<body>
+	<table id="tb1" width="300px">
+		<tr> <th> 분류 </th>				 <th> 항목 </th> <td id="tb1" colspan="2"> 제품명 </td> </tr>
+		<tr> <td rowspan="3"> 과일 </td> <td> 감귤 </td> <td id="tb1" rowspan="3"> 과자 </td> <td id="tb1"> 새우깡 </td> </tr>
+		<tr> 							 <td> 바나나 </td> 									 <td id="tb1"> 썬칩 </td> </tr>
+		<tr>							 <td> 레몬 </td> 									 <td id="tb1"> 칸쵸 </td> </tr>
+	</table>
+	<table width="300px">
+		<tr> <td id="tb1" rowspan="2"> 채소 </td> <td id="tb1"> 당근 </td> <td id="tb1" rowspan="4"> 스낵 </td> <td id="tb1"> 콘초 </td></tr>
+		<tr> 									 <td id="tb1"> 양파 </td> 										<td id="tb1"> 꼬깔콘 </td> </tr>
+		<tr> <td id="tb1" rowspan="2"> 치킨 </td> <td  id="tb1"> BBQ </td>										<td id="tb1"> 빈츠 </td> </tr>
+		<tr>				 					 <td id="tb1"> 처갓집 </td>						 				<td id="tb1"> 뽀빠이 </td> </tr>
+	</table>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> 테이블 이해하기 </title>
+	<style>
+		td, th{
+			border: 2px solid black;
+		}
+		table{
+			border-collapse: collapse;
+		}
+
+		#gre{
+			border: 2px solid green;
+			border-collapse: collapse;
+		}
+
+	</style>
+</head>
+<body>
+	<table width="300">
+		<tr> <th id="gre"> 분류 </th> <th id="gre"> 항목 </th> <td colspan="2"> 제품명</td> </tr>
+		<tr> <td id="gre" rowspan="3"> 과일 </td> <td id="gre"> 감귤 </td> <td rowspan="3"> 과자 </td> <td> 새우깡 </td> </tr>
+		<tr> 							<td id="gre"> 바나나 </td> 							<td> 썬칩 </td> </tr>
+		<tr>							<td id="gre"> 레몬 </td>								<td> 칸쵸 </td> </tr>
+	</table>
+	<table width="300">
+		<tr> <td rowspan="2"> 채소 </td> <td> 당근 </td> <td rowspan="4"> 스낵 </td> <td> 콘초 </td> </tr>
+		<tr> 							<td> 양파 </td> 					<td> 꼬깔콘 </td> </tr>
+		<tr> <td rowspan="2"> 치킨 </td> <td> BBQ </td>					<td> 빈츠 </td> </tr>
+		<tr> 							<td> 처갓집 </td>				<td> 뽀빠이 </td></tr>
+	</table>
+</body>
+</html>
+
+- 아이디 지정을 하나씩 해줘야 됌
+  그래도 완벽하게 아이디 지정한 테이블 모든 변이 초록색으로 변하지 않았음
+  : 왜 그런건지 이유를 도무지 찾을 수 없음 ㅠ	
