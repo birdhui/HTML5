@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div ~p {
+			background-color: yellow;
+		}
+	</style>
+	<!-- 하위 선택자 : 지정된 요소의 하위에 있는 요소를 선택한다.
+		다음 예제는 <div> 요소 내의 모든 <p> 요소를 선택하는 예제이다. -->
+</head>
+<body>
+	<div>
+		<p> div에 포함된 단락 1 </p>
+		<p> div에 포함된 단락 2 </p>
+		<section> <p> div에 포함된 단락 3 </p></section>
+		<section> div에 포함된 단락 4 </section>
+		<!-- <div> 요소에 포함이 되어 있지만 <p> 요소가 아니기 때문에 선택하지 않음 -->
+	</div>
+
+	<p> div에 포함되지 않은 단락 5 </p>
+	<p> div에 포함되지 않은 단락 6 </p>
+</body>
+</html>

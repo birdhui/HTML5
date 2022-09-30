@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		/*
+		CSS 선택자
+		a[target] 가능
+		a[target=_blank]도 가능
+
+		조합 선택자
+		p > a -> p를 부모로 인식하지 않음 즉, 안됨
+		p ~ a
+		body + p
+		body > p
+		*/
+		p~a {
+			background-color: greenyellow;
+		}
+		a:hover{
+			color: blue;
+		}
+		a:action{
+			color: red;
+		}
+	</style>
+	<!-- [attrubute] 선택자는 attribute라는 이름의 특성을 가진 요소를 선택한다.
+	정의한 target이 포함된 모든 <a> 요소에 CSS 속성을 적용한다. -->
+</head>
+<body>
+	<p> 속성 선택자에 해당되는 링크는 노란색으로 표시됩니다. </p>
+	<a href="http://www.google.com"> google.com </a>
+	<a href="http://naver.com" target="_blank----">naver.com</a>
+	<a href="http://daum.net" target="_top">daum.net</a>
+	<a href="http://daum.net" target="">daum.net</a>
+	<!-- target 안에 정의를 하지 않았는데도 [target]이 정의되어 있기 때문에
+		CSS속성이 적용됨. -->
+	<!-- [attribute=value] 선택자
+		a href 사용할 때 띄어쓰기 사용하면 링크가 세개 다 같이 링크 걸어짐
+		-> 띄어쓰기 하지 말기 -->
+</body>
+</html>

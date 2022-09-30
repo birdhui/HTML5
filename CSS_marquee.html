@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		[class~=tag1]{
+			background: lightyellow;
+			animation-duration: 3s;
+			animation-name: slidein;
+			animation-iteration-count: infinite;
+			animation-direction: altenate;
+			font-size: 20px;
+			font-weight: lighter;
+		}
+
+		[class*=tag2]{
+			background: lightpink;
+			animation-duration: 3s;
+			animation-name: slidein;
+			animation-iteration-count: infinite;
+			animation-direction: altenate;
+			font-weight: boler;
+		}
+
+		@keyframes slidein {
+			from {
+				margin-left: 100%;
+				width: 100%;
+			}
+			to {
+				margin-left: 0%;
+			}
+		}
+	</style>
+	<!--
+		[class|=tag] : class에 정확히 "tag"/"tag-"로 시작하는 요소 선택
+		[class^=tag2] : class에 접미사로 사용된 "tag2"가 포함된 요소 선택
+	-->
+</head>
+<body>
+	<p class="tag1">tag1</p>
+	<p class="tag1 -">tag1 -</p>
+	<p class="tag1-text">tag1-text</p>
+	<p class="tag1-tag">tag1tag1</p>
+	<p class="paragrphtag1">paragraphtag1</p>
+	<p class="parapraph-tag1-">parapraph-tag1-</p>
+	<p class="paragraphtag1"> paragraphtag1</p>
+	<p class="tag1-tagtag">tag1tag1tag1</p>
+	<p class="tag1--paragraphtag">tag1paragraphtag1</p>
+	<p class="paratag-graph">paratag-graph</p>
+	<br> <br>
+	<p class="tag2">tag2</p>
+	<p class="tag2-">tag2-</p>
+	<p class="tag2-text">tag2-text</p>
+	<p class="tag2-tag">tag2tag2</p>
+	<p class="paragrphtag2">paragraphtag2</p>
+	<p class="parapraph-tag2-">parapraph-tag2-</p>
+	<p class="paragraphtag2"> paragraphtag2</p>
+	<p class="tag2-tag2tag2">tag2tag2tag2</p>
+	<p class="tag2--paragraphtag2">tag2paragraphtag2</p>
+	<p class="paratag-graph">paratag-graph</p>
+</body>
+</html>
+
+<!-- <html>animation-duration: 3s;
+한 싸이클의 애니메이션이 얼마에 걸쳐 일어날지 지정
+animation-name: slidein;
+이 애니메이션의 중간 상태를 지정합니다. 중간 상태는 @keyframes 규칙을 이용하여 기술
+animation-iteration-count: infinite;
+//애니메이션이 몇 번 반복될지 지정합니다. infinite로 지정하여 무한히 반복
+animation-direction: altenate;
+//애니메이션이 종료되고 다시 처음부터 시작할지 역방향으로 진행할지 지정
+taping lighter 태그 뭔지 알기 -->

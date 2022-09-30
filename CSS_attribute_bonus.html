@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Typing Effect </title>
+	<link rel="stylesheet" href="/src/CSS_attribute_bonus.html"/>
+	<meta charset="UTF-8" />
+	/* charset="UTF-8" : 스타일 시트의 인코딩을 Unicode UTF-8로 설정, style 태그 내에는 적용이 안됨  */
+
+	<style>
+		body{
+			background: black;
+			/* body 부분의 배경색 */
+		}
+		h1 {
+			text-transform: capitalize;
+			/* text-transform : 대문자 또는 소문자로 바꾸는 속성
+			   capitalize : 단어의 첫번째 글자를 대문자로 바꿈 */
+
+			font-size: 3rem;
+			/* font-size : 글자의 크기를 조정하는 속성
+			   3rem : html 요소의 크기가 16px이므로, 그것의 세배인 글자 크기는 48px가 된다.
+			   em과 rem의 차이 : em단위는 상위 요소 크기의 몇배인지로 크기를 정한다.
+			   					rem단위는 문서의 최상위 요소, html요소 크기의 몇배인지로 크기를 정한다. */
+
+			white-space: nowrap;
+			/* white-space : 스페이스와 탭, 줄바꿈, 자동줄바꿈을 어떻게 처리할지 정하는 속성
+			   nowrap :  스페이스와 탭(병합:1개의 공백으로 바꿈), 줄바꿈(병합), 자동줄바꿈(내용이 영역을 벗어나더라도 입력된 대로 출력) */
+
+			color: transparent;
+			/* color : 요소의 색을 정하는 속성
+			   transparent : 투명도를 조절 -> 배경색을 지정하지 않고 투명하게 만듦  */
+
+			margin: 0;
+			/* margin : 정의된 테두리 외부의 요소 주위에 공간(여백)을 만드는 데 사용되는 속성
+			   0 : 위, 좌, 아래, 우 여백을 지정하지 않는다는 의미 */
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			/* position : 엘리먼트가 브라우저 화면에 어떻게 배치되는가를 결정하는 속성
+						  [postion] 속성을 [static]이 아닌 다른 값으로 설정했을 때 top, left, bottom, right을 함께 사용함
+						  right-위에서 얼마나, left는 좌측에서 얼마나, bottom은 아래에서 얼마나, right은 우측에서 얼마나 떨어져야 하는지를 결정
+			   top 50%  : 위에서 50% 떨어져라
+			   left 50% : 아래에서 50% 떨어져라
+			   absolute : 부모 엘리먼트 내부에 속박되지 않음, 기본적으로 브라우저 화면 상에서 어디든지 원하는 위치에 자유롭게 배치 가능, 부모 엘리먼트 위에 겹쳐서 배치 가능 */
+
+
+			transform: translate(-50%, -50%);
+			/* transform : 요소를 회전하거나 확대/축소하거나 비트는 등 형태를 변형할 수 있는 속성
+						   (평행 이동 변환을 줄 수 있음)
+			   translate() : 텍스트 가운데 정렬 -> x축, y축 -50씩 이동 */
+			}
+
+			h1::before
+			/* ::before 투명한 글자 위에 같은 텍스트로 다른 글자를 입힌 상태
+		   텍스트 두개가 겹쳐져 있는 상태
+		   -> 생성한 값으로 요소를 대체할 수 있는 속성 */
+
+		   {
+		   	content: "Typing Effect Using only CSS!!";
+		   	/* content : 선택한 요소의 내용 앞이나 뒤에 콘텐츠를 붙이는 속성 */
+
+		   	position: absolute;
+		   	/* 위 [position] 내용과 동일 */
+
+		   	top: 0;
+		   	left: 0;
+		   	/* 가상인자가 텍스트 위에 위치할 수 있도록 설정 */
+
+		   	width: 100%;
+		   	height: 100%;
+		   	/* 넓이와 높이 설정 */
+
+		   	color: #da4747;
+		   	/* h1 위에 입혀지는 글씨 색상을 의미 */
+
+		   	overflow: hidden;
+			/* overflow : 요소 내의 컨텐츠가 너무 커서 모두 보여주기 힘들 때 그것을 어떻게 보여줄지 지정하는 속성
+			   hidden : 넘치는 부분은 잘려서 보여지지 않음
+			   그 외 : visivle/scroll/auto */
+
+			border-right: 3px solid white;
+			/* border-right : 오른쪽 테두리의 모양을 정하는 속성 */
+
+			animation: typing 8s steps(30) infinite;
+			/* animation : 키프레임 애니메이션을 정의한 후 요소에 애니메이션을 적용하는 속성
+			   8s : 기본값 0은 애니메이션이 재생되지 않음, "s"(초), "ms"(밀리초)단위로 표현 가능 즉, 8초 단위로 애니메이션 재생
+			   steps() : 애니메이션이 계단식(step)으로 진행되도록 하는 속도 함수
+			   steps() 숫자의 의미는 content의 길이를 말함
+			   infinite : 무한반복의 의미 */
+			}
+
+			@keyframes typing {
+			/* keyframes : 개발자가 애니메이션 중간중간의 특정 지점들을 거칠 수 있는 각 프레임의 스타일을 정의하는 속성
+			               -> CSS 애니메이션 과정의 중간 절차를 제어할 수 있음(브라우저가 ㅈ동으로 애니메이션을 처리하는 것보다 더 세밀하게 중간 동작들을 제어할 수 있음) */
+				0%{
+					width: 0%;
+				}
+				/* 0% : 애니메이션이 시작된 시점을 의미 */
+
+				50%{
+					width: 100%;
+				}
+				/* 50% : 애니메이션이 시작되고 있는 시점을 의미 */
+
+				100%{
+					width: 0%;
+				}
+				/* 100% : 애니메이션이 끝나는 시점을 의미 */
+			}
+		</style>
+		<body>
+			<h1> Typing Effect Using only CSS!!</h1>
+		</body>
+	</head>
+	</html>

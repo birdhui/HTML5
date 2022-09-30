@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		[title~=tag] {
+			border:  5px solid blue;
+		}
+	</style>
+	<!-- [attribute ~= value] 선택자는 attribute 특성 값이 정확히 value인 요소를 선택한다.
+		하지만 attribute 특성 값은
+		공백으로 구분한 여러 개의 값을 가지고 있을 수 있다.-->
+</head>
+<body>
+	<p> 단어 "tag"를 포함하는 title 속성을 가진 박스는 파란색 테두리로 표시됩니다. </p>
+	<!-- 온전한 tag단어 뿐만이 아니라 tag단어가 포함된 모든 요소를 선택하는 것을 확인할 수 있다. -->
+
+	<img src="image/redbox.png" title="box tag" width="150">
+	<img src="image/blackbox.png" title="tag" width="150">
+	<img src="image/greenbox.png" title="tag box" width="150">
+	<img src="image/blackbox.png" title="box tag tag" width="150">
+	<!-- 단어가 여러개의 값이 있어도 공백(띄어쓰기)이 되어 구분이 되어 있다면
+	선택한다.
+	즉, 여기에 있는 네개의 속성 모두 CSS속성을 적용시킨다. -->
+</body>
+</html>

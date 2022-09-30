@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div.fo1 {
+			border: 30px solid navy;
+			background-color: yellow;
+			padding: 10px;
+			width: 400px;
+			height: 900px;
+		}
+		div.fo2 {
+			border: 30px solid navy;
+			background-image: url("./image/yellownote.jpg");
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: left center;
+			background-attachment: fixed;
+			padding: 10px;
+			width: 300px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h1>입력 양식 데이터 전송 버튼</h1>
+	<fieldset>
+		<form action="page.jsp" method="get">
+			<p>button : <input type="button" name="bt" onclick="alert('클릭-1 사용')"> 클릭-1 </button></p>
+			<p>checkbox : <input type="checkbox" name="ck"></p>
+			<p>radio : <input type="radio" name="rad"></p>
+			<p>week : <input type="week" name="we"></p>
+			<p>month : <input type="month" name="mm"></p>
+			<p>date : <input type="date" name="birth" size="10"></p>
+			<p>datetime-local : <input type="datetime-local" name="dl"></p>
+			<p>time : <input type="time" name="ti"></p>
+			<p>file : <input type="file" name="fi"></p>
+			<p>text : <input type="text" name="name" size="10"></p>
+			<p>password : <input type="password" name="p/w" size="10" placeholder="비밀번호" required></p>
+			<p>tel : <input type="tel" name="tt"></p>
+			<p>eamil : <input type="email" name="ee"></p>
+			<p>color : <input type="color" name="co"></p>
+			<p>hidden : <input type="hidden" name="h"></p>
+			<p>image : <input type="image" name="ii" img src="./image/piz1.jpg" width="90" height="50"></p>
+			<p>number : <input type="number" name="nn" size="10"></p>
+			<p>range : <input type="range" name="ra"></p>
+			<p>search : <input type="search" name="se"></p>
+			<p>url : <input type="url" name="uu"></p>
+			<p>submit <input type="submit" name="sub"></p>
+			<p>reset <input type="reset" name="re"></p>
+		</fieldset><br>
+
+		<div class="fo2">
+			<p>이미지 업로드 :</p>
+			<p></p>
+			<input type="file" name="fi">
+		</div><br>
+		<h1>텍스트 공간 입력 양식</h1>
+		<textarea rows="5" cols="50">텍스트를 작성하는 공간입니다.</textarea>
+		<h1>fieldset 태그입니다. 입력 폼이 여러 개 있을 때, 경계선을 그려 하나의 그룹으로 만들어 사용합니다.</h1>
+		<fieldset>
+			<legend>개인 정보 입력</legend>
+			<p>이름 : <input type="text" name="name"></p>
+			<p>학교 : <input type="text" name="school"></p>
+			<input type="submit" value="제출">
+			<input type="reset" value="다시작성">
+		</fieldset><br>
+
+		<fieldset>
+			<h3>당신의 성별을 무엇입니까?</h3>
+			<input type="radio" name="sex" value="male" checked>남자
+			<input type="radio" name="sex" value="female">여자
+			<p></p>
+			<h3>당신은 몇 학년입니까?</h3>
+			<input type="radio" name="year" value="1">1학년
+			<input type="radio" name="year" value="2">2학년
+			<input type="radio" name="year" value="3" checked>3학년
+			<input type="radio" name="year" value="4">4학년
+			<p></p>
+			<input type="submit" name="제출">
+			<input type="reset" name="다시작성">
+		</fieldset><br>
+
+		<fieldset>
+			<h3>현재 관심을 가지고 있는 학습 주제는 무엇입니까?</h3>
+			<input type="checkbox" name="subject" value="HTML5">HTML5<br>
+			<input type="checkbox" name="subject" value="CSS3">CSS3<br>
+			<input type="checkbox" name="subject" value="Javascript">Javascript<br>
+			<input type="checkbox" name="subject" value="Jquery">Jquery<br>
+			<p></p>
+			<input type="submit" name="제출">
+			<input type="reset" name="다시작성">
+		</fieldset><br>
+
+		<fieldset>
+			<h3>Buttom 태그 사용</h3>
+			<button type="button" onclick="alert('클릭-1 사용')">클릭-1</button>
+			<h3>Input 태그 사용</h3>
+			<button type="button" onclick="alert('클릭-2 사용')" value="클릭-2">클릭-2</button>
+			<h3>Image 태그 사용</h3>
+			<button type="button" onclick="alert('클릭-3 사용')"><img src="./image/yellownote.jpg"></button>
+		</fieldset><br>
+
+		<fieldset>
+			<h3>관심 있는 학습 주제 한 가지를 선택하세요.</h3>
+			<select name="subjects">
+				<option value="1" selected>HTML5</option>
+				<option value="2" >CSS3</option>
+				<option value="3" selected>Javascript</option>
+				<option value="4" selected>Jquery</option>
+			</select>
+		</fieldset><br>
+
+		<fieldset>
+			<h3>관심 있는 학습 주제를 모두 선택하세요.</h3>
+			<select name="subjects" size="4" multiple>
+				<option value="1" selected>HTML5</option>
+				<option value="2" selected>CSS3</option>
+				<option value="3" selected>Javascript</option>
+				<option value="4" selected>Jquery</option>
+			</select>
+		</fieldset><br>
+
+		<fieldset>
+			<label>전공 분야를 선택하세요.
+				<select name="major">
+					<optgroup label="computer">
+						<option>Software</option>
+						<option>Robot</option>
+						<option>System</option>
+					</optgroup>
+					<optgroup label="language">
+						<option selected>Korea</option>
+						<option>English</option>
+						<option>China</option>
+						<option>Germany</option>
+					</optgroup>
+					<optgroup label="business">
+						<option>Service</option>
+						<option>Education</option>
+						<option>Communication</option>
+						<option>Marketing</option>
+					</optgroup>
+				</select>
+				<p></p>
+				<input type="submit" name="선택">
+				<input type="reset" name="다시선택">
+			</label>
+		</fieldset><br>
+
+		<fieldset>
+			<label>전공 분야를 입력하세요.
+				<input type="text" list="majorlist" name="major"></label>
+				<datalist id="majorlist">
+					<option value="Software">소프트웨어</option>
+					<option value="Robot">로봇</option>
+					<option value="System">시스템</option>
+					<option value="Service">서비스</option>
+					<option value="Education">교육</option>
+				</datalist>
+				<p></p>
+				<input type="submit" name="완료">
+				<input type="reset" name="다시작성">
+		</fieldset><br>
+	</form>
+</body>
+</html>
+
+
+<!--
+form 열고 div 안에서 닫지 말고
+form 속성을 쓰지 않을 때까지 쓴 후에 닫기
+
+div 밖으로 넘어가도 상관없음
+div 안에서 닫아버릴 시 전송과 다시작성 (submit, reset) 속성이 기능을 못함
+
+- <fieldset> </fieldset> 끝나고 <br> 꼭 붙여주기
+- 처음에 어떤 항목이 체크되어 있는지 확인 후 checked 뒤에 적어주기

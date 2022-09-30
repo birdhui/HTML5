@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div{	
+			width: 200px;
+			/*div 영역의 크기를 설정 */
+			height: 200px;
+			/*div 영역의 크기를 설정 */
+			background-color: yellowgreen;
+			/*div 영역의 색깔을 설정 */
+			line-height: 190px;
+			/* 글자를 세로로 가운데 정렬 하기위해 사용함 정중앙에 위치시킬때는 높이를 배경과 같게 해주면 됨 */
+			text-align: center;
+			/* 글자를 가로로 가운데 정렬 하기위해 사용함 */
+			font-size: 40px;
+			/* 글자의 크기를 지정 */
+			transition: all 2s linear 0.1s;
+			/* 모든속성을 0.5초에 걸쳐 동일한 속도로 천천히 움직이게함 */ 
+			margin: 200px auto;
+			/* 200px 높이에 좌우는 자동정렬 */
+		}	
+		div:hover {
+			color: white;
+			/* 커서 올렸을때 문단1의 색깔을 하얗게 바꿈 */
+			transform: scale( 2.0 );
+			/* 크기를 2배로 바꿈 */
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<div>문단 1</div>
+</body>
+</html>
+
+<!-- https://www.codingfactory.net/10953 (트랜지션)
+	https://www.codingfactory.net/12593 (트랜스폼)
+	https://eunyoe.tistory.com/105 (div 안쪽 가운데 정렬)
+	https://velog.io/@leyuri/CSS-margin-0-auto (마진)-->

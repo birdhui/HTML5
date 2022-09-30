@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+		body p{
+		background-color: lightgreen;
+		}
+		div ~ p {
+			background-color: yellow;
+		}
+		p+section {
+			background-color: lightblue;
+		}
+		p:hover {
+			color: red;
+		}
+		p:active {
+			color: lightcoral;
+		}
+		/* section > p {
+			background-color: lightgreen;
+		}
+		div p {
+			background-color: lightgreen;
+		} */
+	</style>
+</head>
+<body>
+	<p> 문단 1 </p>
+	<div>
+		<p> div에 포함된 문단 2 </p>
+	</div>
+	<p> 문단 3 </p>
+	<p> 문단 4 </p>
+	<section> 문단 5 </section>
+	<p> div에 포함됨 6 </p>
+	<p> div에 포함됨 7 </p>
+</body>
+</html>
+<!-- <style>
+	div p{
+		background-color: lightgreen;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<p>문단 1</p>
+		<p>문단 1</p>
+		<p>문단 1</p>
+	</div>
+	<p>문단 1</p>
+	<p>문단 1</p>
+	<p>문단 1</p>
+	<p>문단 1</p>
+</body>
+</html>
+-->
