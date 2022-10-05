@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.ba1 {
+			border: thick groove lightcoral;
+			background-image: url("./image/yellownote.jpg");
+			background-repeat: repeat;
+			background-size: auto;
+			width: 600px;
+			height: 150px;
+			padding: 30px;
+		}
+		.ba2 {
+			border: thin dashed black;
+			background-image: url("./image/yellownote.jpg");
+			background-size: 300px 100px;
+			background-repeat: no-repeat;
+			/*
+			background-repeat 전부 외워놓기
+			repeat-x : 가로축으로 맞춤
+			repeat-y : 세로축으로 맞춤
+			no-repeat : 반복 없음
+			space : 규격만큼 맞춤 (여백 O)
+			round : 크기에 맞춰 확대해 맞춤 (여백 X)
+			*/
+			width: 600px;
+			height: 150px;
+			padding: 30px;
+			margin-left: 10px;
+		}
+		.ba3 {
+			border: 3px solid black;
+			background-image: url("./image/yellownote.jpg");
+			background-repeat: 100% 100%;
+			background-size: auto;
+			padding: 30px;
+			width: 600px;
+			height: 150px;
+		}
+		.ba4 {
+			border: medium dotted black;
+			background-image: url("./image/yellownote.jpg");
+			background-size: 75% 50%;
+			background-repeat: no-repeat;
+			padding: 30px;
+			width: 600px;
+			height: 150px;
+		}
+	</style>
+</head>
+<body>
+	<h1>background-size: auto</h1>
+	<div class="ba1">
+		<h1>제목</h1>
+		<p>배경 이미지는 원래 크기로 표시됩니다.</p>
+	</div>
+
+	<h1>background-size: 300px 100px</h1>
+	<div class="ba2">
+		<h1>제목</h1>
+		<p>배경 이미지는 가로 300px, 세로 100px로 설정됩니다.</p>
+	</div>
+		<h1>background-size: auto</h1>
+	<div class="ba3">
+		<h1>제목</h1>
+		<p>배경 이미지는 가로 300px, 세로 100px로 설정됩니다.</p>
+	</div>
+		<h1>background-size: 75% 50%</h1>
+	<div class="ba4">
+		<h1>제목</h1>
+		<p>배경 이미지는 가로 300px, 세로 100px로 설정됩니다.</p>
+	</div>
+</body>
+</html>

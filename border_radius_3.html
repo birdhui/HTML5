@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#box1 {
+			border: 4px solid blue;
+			width: 40%;
+			/*
+			width: 30%로 설정하면
+			박스 두개가 나란히 정렬됨
+
+			40%로 설정시
+			자리가 좁아 밀려 자동적으로 <br> 속성이 적용됨
+			*/
+			float: left;
+		}
+		#box2 {
+			border: 4px solid blue;
+			width: 40%;
+			float: right;
+		}
+		#left {
+			float: left;
+		}
+		#right {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<pre id="box1">
+		<span id="left">왼쪽 상단</span><span id="right">오른쪽 상단</span>
+
+
+		<span id="left">왼쪽 하단</span><span id="right">오른쪽 하단</span></pre>
+
+	<pre id="box2">
+		<span id="left">왼쪽 상단</span><span id="right">오른쪽 상단</span>
+
+
+		<span id="left">왼쪽 하단</span><span id="right">오른쪽 하단</span></pre>
+
+	<pre id="box1">
+		<span id="left">왼쪽 상단</span><span id="right">오른쪽 상단</span>
+
+
+		<span id="left">왼쪽 하단</span><span id="right">오른쪽 하단</span></pre>	
+	</body>
+</html>

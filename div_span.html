@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div:nth-child(1) {
+			background: yellow;
+		}
+		div:nth-child(2) {
+			background: limegreen;
+		}
+		div:nth-child(3) {
+			background: purple;
+		}
+		span:nth-child(1) {
+			background: yellow;
+		}
+		span:nth-child(2) {
+			background: limegreen;
+		}
+		span:nth-child(3) {
+			background: purple;
+		}
+	</style>
+</head>
+<body>
+	<h1>div 공간 분할</h1>
+	<div>
+	<div>div 첫 번째 영역입니다.</div>
+	<div>div 두 번째 영역입니다.</div>
+	<div>div 세 번째 영역입니다.</div>
+</div>
+<!--
+div 영역이 적용이 안됨
+확인해보기 !!!!!!!!!!!!
+-->
+
+	<h1>span 공간 분할</h1>
+	<section>
+	<!--
+	강제로 부모 <section>를 만들어서
+	span에 구조 선택자 CSS를 적용시킴
+	-->
+	<span>span 첫 번째 영역입니다.</span>
+	<span>span 두 번째 영역입니다.</span>
+	<span>span 세 번째 영역입니다.</span>
+</section>
+</body>
+</html>
