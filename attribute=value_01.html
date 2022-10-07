@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		a[target=_blank] {
+			background-color: greenyellow;
+		}
+	</style>
+	<!-- [attribute=value]선택자
+		이름의 특성 값이 정확히 value인 요소를 선택한다.
+		즉, <a> 속성 안에서 [target="_blank"]로 정의된 링크만 CSS속성을 적용함 -->
+</head>
+<body>
+	<p> 속성 선택자에 해당되는 링크는 노란색으로 표시됩니다.</p>
+	<a href="http://google.com">google.com</a>
+	<a href="http://naver.com" target="_blank">naver.com</a>
+	<!-- 정확히 target="_blank"라고 정의되어 있는 게 naver.com 밖에 없어서
+	이 <a> 속성만 노란색으로 표시됨 -->
+	<a href="http://daum.net" target="_top">daum.net</a>
+	<a href="http://naver.com" target="_blank_blank">naver.com</a>
+	<!-- _blank_blank도 적용 안됨. -->
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#box1{
+			border: 20px solid navy;
+			padding: 10px;
+			width: 45%;
+			background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url("./image/logo_02.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		
+		/*#box1{
+			border: 20px solid navy;
+			background: url("./image/logo_02.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			padding: 10px;
+			width: 45%;
+		}
+		#box1::before{
+			position: absolute;
+			padding: 10px;
+			width: 25%;
+			opacity: 0.5;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+		}
+		<!-- 가상 요소::before에 배경색상을 설정해주고,  opacity를 준다. -->
+		#box1_h1 {
+			text-align: left;
+			position: relative;
+		}
+		#box2{
+			border: 20px solid navy;
+			background: url("./image/logo_02.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			padding: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			width: 45%;
+		}
+		#box2::before{
+			position: absolute;
+			padding: 10px;
+			width: 25%;
+			opacity: 0.5;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+		}*/
+	</style>
+</head>
+<body>
+	<h2>입력 데이터 초기화 버튼</h2>
+	<div>
+		<form id="box1" action="page.jsp" method="get">
+			<fieldset>
+				<legend>개인정보입력</legend>
+			<p> ID: <input type="text" name="name" title="major"></p>
+			<p> 비밀번호: <input type="password" major="major"></p>
+			<p> 생년월일: <input type="date" major="major"></p>
+			<p> 퍼스널컬러: <input type="color" major="major"></p>
+		</fieldset>
+		</form>
+	</div>
+	<br>
+	<div>
+		<form id="box1" action="page.jsp" method="get">
+			<p> 이미지 업로드</p>
+			<input type="file" value="파일선택">
+		</div>
+		<br>
+		<input type="submit" value="전송">
+		<input type="reset" value="다시작성">
+	</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div > p {
+			background-color: yellow;
+		}
+	</style>
+	<!-- 자식선택자는 하위 요소 전체에 스타일을 적용하는 것이 아니라 직계 자식 요소만 선택한다.
+		> 조합 문자를 사용해 표현한다.
+		부모가 <div> 요소인 모든 <p> 요소를 선택한다. -->
+</head>
+<body>
+	<div>
+		<p> div에 포함됨 1 </p>
+		<p> div에 포함됨 2 </p>
+		<section><p> div에 포함됨 3 </p></section>
+		<p> div에 포함됨 4 </p>
+		<p><section> div에 포함되었지만, style 적용안됨 5</section></p>
+		<!-- 
+		<section>이 <p>보다 상위개념
+		<section> = <div>와 같은 기능
+		-->
+	</div>
+	<p> div에 포함되지 않음 6 </p>
+	<p> div에 포함되지 않음 7 </p>
+</body>
+</html>

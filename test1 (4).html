@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div{border:  2px solid black;}
+		.a{	color: black; overflow:visible;}
+		.a:hover{color: lightcoral;	}
+		
+		.b{	overflow: auto;	}
+
+		#hi{
+			float: right;
+			width: 200px; height: 200px;
+			transition: all 3s linear 0.1s;
+ 		}
+		#hi:hover{
+			width: 400px; height: 400px;
+ 		 /* image 크기가 바뀌는 애니메이션 */
+ 			transform: scale(1.0);
+		}
+
+		#hi2{
+			font-size: 40px;
+			transition: all 10s linear 0.0s;
+		}
+		#hi2:hover{
+			font-size: 400px; /* 이모지 크기가 바뀌는 애니메이션 */
+		}
+	</style>
+</head>
+<body>
+	<h1>overflow : visible</h1>
+	<div class="a">
+		<img id="hi" src="./image/note.jpg">
+		문본문본문본문본문본문본문본문본문본문본문본문본문본문문본문본문본문본문문본문본문본문본문문본문본문본문본문
+	</div>
+	<br><br><br><br><br><br>
+<h1>overflow : auto</h1>
+	<div class="b"><img id="hi" src="./image/note.jpg">본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
+	</div>
+
+	<p id="hi2">
+		&#129409; <br>
+	</p>
+
+	<p id="hi2">
+		안녕하세요
+	</p>
+</body>
+</html>
