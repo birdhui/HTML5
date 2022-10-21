@@ -1,0 +1,118 @@
+<!-- HTML form 태그 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>&lt; HTML form tag &gt;</title>
+</head>
+
+<body>
+	<form action="page.jsp" method="get">
+		<!--
+			입력 양식 데이터 전송 버튼
+		-->
+		<fieldset style="width: 50%">
+		<legend style="font-weight: bold">문자 입력 양식</legend>
+		<p>이름 : <input type="text" name="name" size="10"></p>
+		<p>학번 : <input type="text" name="stnum" size="10" value=""></p>
+		<p>학과 : <input type="text" name="major" value="컴퓨터공학과"></p>
+		<p></p>
+		<input type="submit" value="전송">
+		<input type="reset" value="다시 작성">
+		</fieldset>
+		<p></p>
+
+		<fieldset style="width: 50%">
+		<legend style="font-weight: bold">회원 인증(비밀번호) 입력 양식</legend>
+		<p>ID : <input type="text" name="ID" size="15" required></p>
+		<p>PW : <input type="password" name="psw" size="15" placeholder="비밀번호" required></p>
+		<p></p>
+		<input type="submit" value="전송">
+		<input type="reset" value="다시 작성">
+		</fieldset>
+		<p></p>
+
+		<!--
+		fieldset 태그
+		입력 폼이 여러 개 있을 때, 경계선을 그려서 하나의 그룹으로 만들 때 사용
+		-->
+		<fieldset style="width: 50%">
+		<legend style="font-weight: bold">텍스트 공간 입력 양식</legend>
+		<textarea rows="10" cols="50">텍스트를 작성하는 공간입니다.</textarea>
+		<p></p>
+		<input type="submit" value="전송">
+		<input type="reset" value="다시 작성">
+		</fieldset>
+		<p></p>
+
+		<!--
+		radio 태그
+		-->
+		<fieldset style="width: 50%">
+		<legend style="font-weight: bold">라디오 양식</legend>
+		<h3>성별을 선택해주세요.</h3>
+		<input type="radio" name="sex" value="male" checked>남자
+		<input type="radio" name="sex" value="female" checked>여자
+		<input type="radio" name="sex" value="trans" checked>중성
+		<br>
+		<h3>학년을 선택해주세요.</h3>
+		<input type="radio" name="year" value="1" checked>1학년
+		<input type="radio" name="year" value="2" checked>2학년
+		<input type="radio" name="year" value="3" checked>3학년
+		<input type="radio" name="year" value="4" checked>4학년
+		<br>
+		<h3>대학 소속을 선택해주세요.</h3>
+		<input type="radio" name="uni" value="1" checked>융합대학
+		<input type="radio" name="uni" value="2" checked>문화예술대학
+		<input type="radio" name="uni" value="3" checked>인문사회대학
+		<input type="radio" name="uni" value="4" checked>경영대학
+		<input type="radio" name="uni" value="5" checked>생명보건대학
+		<input type="radio" name="uni" value="6" checked>주시경교양대학
+		<br>
+		<input type="submit" value="전송">
+		<input type="reset" value="다시 작성">
+		</fieldset>
+		<p></p>
+
+		<!--
+		체크박스 양식
+		-->
+		<fieldset style="width: 50%">
+		<legend style="font-weight: bold">체크박스 양식</legend>
+		<h3>현재 관심을 가지고 있는 학습 주제는 무엇입니까?</h3>
+		<h6>(복수 선택 가능)</h6>
+		<input type="checkbox" name="subject" value="HTML5" checked>HTML5
+		<br>
+		<input type="checkbox" name="subject" value="CSS3" checked>CSS3
+		<br>
+		<input type="checkbox" name="subject" value="Javascript" checked>Javascript
+		<br>
+		<input type="checkbox" name="subject" value="Jquery" checked>Jquery
+		<p></p>
+		<input type="submit" value="전송">
+		<input type="reset" value="다시 작성">
+		</fieldset>
+		<p></p>
+
+		<!--
+		Button 태그
+		-->
+		<fieldset style="width: 50%">
+		<legend style="font-weight: bold">버튼 양식</legend>
+		<h3>Button 태그 사용</h3>
+		<button type="button" onclick="alert('클릭-1 사용')">클릭-1</button>
+		<h3>Input 태그 사용</h3>
+		<input type="button" onclick="alert('클릭-2 사용')" value="클릭-2">
+		<h3>Image 태그 사용</h3>
+		<button type="button" onclick="alert('클릭-3 사용')"><img src="./img/button.jpg" width="100" height="100">클릭-3</button>
+		</fieldset>
+		<p></p>
+
+</body>
+</html>
+<!--
+	value
+    required
+    onclick
+ tag
+-->
