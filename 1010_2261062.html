@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body {
+		background-color: white;
+        color: #331a00;
+	}
+	fieldset
+	{
+		width: 70%;
+		margin: 1% 15% 1%;
+	}
+</style>
+<head>
+	<title>2261062 곽세희 자기소개</title>
+</head>
+<body>
+	<a href="1017_web_pattern.html"><img src="./img/back.jpg" width="50" height="50"></a>
+	<center>
+		<h1><mark>&#128150;2261062 곽세희 자기소개<mark>&#128150;</h1>
+		<br>
+	</center>
+	
+
+	<form action="page.jsp" method="get">
+		<fieldset>
+			<legend>개인 정보 입력</legend>
+			<img src="./img/sehui.jpg" width="300" height="300" alt="이미지가 표시되지 않습니다.">
+			<h3>개인 정보를 입력해주세요.</h3>
+			<p>이름 : <input type="text" name="name" placeholder="곽세희" readonly></p>
+			<!--
+
+			읽기전용 readonly
+			텍스트 상자에 쓰기를 제한하고 오직 읽기만 가능하게 설정
+
+			플레이스 홀더 속성 placeholder
+			현재 폼에 입력해야 하는 텍스트를 희미하게 보여주는 속성
+
+			오타 체크 속성 spellcheck
+			입력되는 문장의 오타를 실시간으로 점검
+
+			-->
+			<p>나이 : <input type="number" name="age" min="1" max="30"></p>
+			<p>이메일 : <input type="email" name="myemail">
+			<p>학번 : <input type="text" name="class" placeholder="2261062"></p>
+			<p>학교 : <input type="text" name="school" placeholder="배재대학교"></p>
+			<textarea cols="30" rows="3" spellcheck="true">오타를 체크하겠습니다.</textarea>
+			<br>
+			<h3>오늘 날짜를 입력해주세요. &#128337;</h3>
+			날짜 : <input type="date" name="today">
+			<h3>과제를 수행한 시간을 입력해주세요.</h3>
+			시간 : <input type="time" name="Yet">
+			<h3>과제를 수행한 기간을 입력해주세요. &#128337;</h3>
+			From : <input type="date" name="from" min="2022-10-03" max="2022-10-17">
+			To : <input type="date" name="To" min="2022-10-03" max="2022-10-17">
+			<h3>생일을 입력해주세요. &#127874;</h3>
+			생일 : <input type="month" name="birth">
+			<br><br>
+			<input type="submit" value="제출">
+			<input type="reset" value="다시작성">
+		</fieldset>
+		<br>
+
+		<fieldset>
+			<legend>개인 정보 입력</legend>
+			<h3>성별을 선택하세요.</h3>
+			<input type="radio" name="sex" value="male" checked>남자
+			<input type="radio" name="sex" value="female">여자
+			<input type="radio" name="sex" value="trans">중성
+			<!--
+			radio : 하나만 선택 가능
+			-->
+			<br>
+			<h3>학년을 선택하세요.</h3>
+			<input type="radio" name="year" value="1" checked>1학년
+			<input type="radio" name="year" value="2">2학년
+			<input type="radio" name="year" value="3">3학년
+			<input type="radio" name="year" value="4">4학년
+			<br>
+			<h3>블로그 주소를 입력해주세요.</h3>
+			<input type="url" name="blogurl">
+			<br><br>
+			<input type="submit" value="제출">
+			<input type="reset" value="다시작성">
+		</fieldset>
+		<br>
+
+		<fieldset>
+			<legend>관심사 선택</legend>
+			<h3>좋아하는 색상을 선택하세요.</h3>
+			색상 : <input type="color" name="pick">
+			<br><br>
+			<h3>관심있는 취미를 모두 선택하세요.(3개까지 가능)</h3>
+			<!--
+			optgroup : 옵션을 목록으로 묶는 기능
+			-->
+			<select name="hobby" size="3" multiple>
+			<optgroup label="운동">
+				<option>필라테스</option>
+				<option>헬스</option>
+				<option>요가</option>
+				<option>테니스</option>
+				<option>조깅</option>
+			</optgroup>
+			<optgroup label="문화생활">
+				<option>영화</option>
+				<option>연극</option>
+				<option>오페라</option>
+			</optgroup>
+			<optgroup label="그 외">
+				<option>맛집탐방</option>
+				<option>카페탐방</option>
+				<option>산책하기</option>
+				<option>자전거 타기</option>
+				<option>집콕이 최고</option>
+			</optgroup>
+			</select>
+			<br><br>
+		<h3>취미 생활의 만족도를 선택해 주세요.</h3>
+		<input type="range" name="point" min="0" max="100">
+		<br>
+		<h3>현재 관심을 가지고 있는 과목은 무엇입니까?</h3>
+		<input type="checkbox" name="subject" value="1" checked>고급웹프로그래밍<br>
+		<input type="checkbox" name="subject" value="2">고급C프로그래밍<br>
+		<input type="checkbox" name="subject" value="3">글쓰기와 읽기<br>
+		<input type="checkbox" name="subject" value="4">영화로 배우는 동아시아 종교철학<br>
+			<br><br>
+			<input type="submit" value="제출">
+			<input type="reset" value="다시작성">
+		</fieldset>
+		<br>
+
+		<fieldset>
+			<legend>텍스트 공간 입력</legend>
+			<h3>자유롭게 입력 가능합니다.</h3>
+			<textarea rows="5" cols="50">하고자 하는 말을 입력해주세요.</textarea>
+			<br><br>
+			<input type="submit" value="제출">
+			<input type="reset" value="다시작성">
+		</fieldset>
+		<br>
+
+	<hr size="10" align="center" width="98%" noshade="noshade"></hr>
+	<br>
+	<footer>
+		<small>
+			&nbsp;&nbsp;&nbsp; &copy; sehui-Gwak &nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp; &reg; 2022
+		</small>
+	</footer>
+</body>
+</html>

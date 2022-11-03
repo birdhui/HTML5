@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>폼 태그, <datalist> 태그</title>
+	<!--
+	datalist
+	: 텍스트 입력 시 자동완성 기능을 제공하는 태그
+	-->
+</head>
+<body>
+	<h3>선택사항을 직접 입력하세요.</h3>
+	<form action="page.jsp" method="get">
+		<label>전공 분야를 선택하세요. <!-- label : 선택 목록 옆에 적용 / p : <br> 기능 자동 적용 -->
+		<input type="text" list="majorlist" name="major">
+		<!--
+		name은 input에 포함되어지는 속성이고
+		list는 선택된 id값에 대한 목록을 보여준다.
+
+		majorlist2를 보여주려면
+		list="majorlist2"로 수정해야 함
+		-->
+		<datalist id="majorlist">
+			<option value="Software">소프트웨어</option>
+			<option value="Robot">로봇</option>
+			<option value="System">시스템</option>
+			<option value="Service">서비스</option>
+			<option value="Education">교육</option>
+		</datalist>
+		<datalist id="majorlist2">
+			<option value="Hardware">하드웨어</option>
+			<option value="Robot">로봇</option>
+			<option value="System">시스템</option>
+			<option value="Service">서비스</option>
+			<option value="Education">교육</option>
+		</datalist>
+	<p></p>
+	<input type="submit" value="제출">
+	<input type="reset" value="다시작성">
+</label>
+</form>
+</body>
+</html>

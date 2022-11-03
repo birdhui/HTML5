@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#id1 {
+			color: blue;
+			background-color: pink;
+		}
+		#id2 {
+			color: blue;
+			background-color: yellow;
+		}
+		h2#id1 {
+			color: red;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="id1 id2">id1 선택자</h1>
+	<!--
+	id 선택이 중복으로 인해 css 적용이 안됨
+	class와는 다른 속성
+	-->
+	<p id="id1">id1 선택자</p>
+	<h1 id="id2">id2 선택자</h1>
+	<p id="id2">id2 선택자</p>
+	<h2 id="id1">Element+ID Selector</h2>
+</body>
+</html>

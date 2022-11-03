@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>폼 태그, 날짜<input type="date"> 입력 폼</title>
+	<!--
+	date
+	: 년-월-일 단위로 원하는 날짜를 입력할 수 있음
+	-->
+</head>
+<body>
+	<form action="page.jsp" method="get">
+		<h3>오늘 날짜 입력</h3>
+		Today : <input type="date" name="today">
+		<h3>프로젝트 수행 기간</h3>
+		From : <input type="date" name="from" min="2022-10-03" max="2022-10-10"><br>
+		To : <input type="date" name="To" min="2022-10-03" max="2022-10-10">
+
+		<!--
+		설정한 날짜 기간 안에서만 선택 가능
+		-->
+
+	<p></p>
+	<input type="submit" value="제출">
+	<input type="reset" value="다시작성">
+</form>
+</body>
+</html>
