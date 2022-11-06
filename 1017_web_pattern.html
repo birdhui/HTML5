@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web pattern</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			width: 960px;
+			margin: 0 auto;
+			overflow: scroll;
+			/* hidden / disbled */
+		}
+
+		#menu {
+			width: 260px;
+			float: left;
+			margin-right: auto;
+		}
+
+		#section {
+			width: 800px;
+			float: right;
+		}
+		
+		a { color: #331a00; }
+		li { list-style: none; list-style-type: circle; font-weight: bold; color: #331a00; }
+
+		/* 스마트폰 */
+      @media only screen and (max-width: 356px) and (max-height: 560px) {
+         body { background-color: white;
+               color: #ccccff;
+         }
+         #menu { width: auto; float: none; }
+         #section { width: auto; float: none; }
+      }
+
+      /* 태블릿PC 세로 */
+      @media screen and (min-width: 357px) and (max-width: 800px) {
+         body { background-color: #b3ccff;
+               color: #ffcccc;
+         }
+         #menu { width: auto; float: none; }
+         #section { width: auto; float: none; }
+      }
+
+      /* 데스크톱 */
+      @media screen and (min-width: 801px) {
+         body { background-color: #ffd9b3;
+         	    color: #331a00; }
+         #menu { width: auto; float: none; }
+         #section { width: auto; float: none; }
+      }
+
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ol>
+			<li><a href="1017_web_orientation.html">sehui-Gwak, 1017</li>
+			<li><a href="0919_2261062.html">sehui-Gwak, 다짐</a></li>
+			<li><a href="1010_2261062.html">sehui-Gwak, 자기소개</a></li>
+		</ol>
+	</div>
+
+	<div id="section">
+	<h1 style="margin: auto;"><mark>&#128150;2261062 sehui-Gwak, Welcome!&#128150;<mark></h1>
+	<br>
+	<img src="./img/welcome.jpg" width="800" height="400">
+	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+		when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+		and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+</body>
+</html>
