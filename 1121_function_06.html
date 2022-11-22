@@ -1,0 +1,23 @@
+<!-- 서로 다른 변수로 같은 함수의 반환값 출력하기 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<script>		
+	function add(x, y) {
+		return x+y;
+	}
+	var calSum=add;		// 함수를 변수에 할당
+	var addUp=add;		// 함수를 변수에 할당
+	document.write("결과 값 : " + calSum(5, 10) + "<br>");
+	document.write("결과 값 : " + addUp(3, 20) + "<br>");
+</script>
+</body>
+</html>
+
+<!--
+	객체
+	속성 = 변수
+	메소드 (중요)
