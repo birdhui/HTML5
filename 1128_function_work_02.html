@@ -1,0 +1,42 @@
+<!-- 자동차의 속도 제어하기 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<p id="upspeed"></p>
+	<p id="downspeed"></p>
+	<script>
+		var car={
+			name: 'Genesis',
+			speed: 100,
+			color: 'Mint',
+			speedup: function(a) {
+				var sp=this.speed+a;
+				if(sp>=300) {
+					sp=50;
+					return sp;
+				}
+				else {
+					return sp;
+				}
+			},
+			speeddown: function(a) {
+				var sp=this.speed-a;
+				if(sp<0) {
+					sp=0;
+					return sp;
+				}
+				else {
+					return sp;
+				}
+			}
+		};
+		var upspeed=document.getElementById("upspeed");
+		upspeed.textContent='속도 증가 : ' +  car.speedup(100);
+		var downspeed=document.getElementById("downspeed");
+		downspeed.textContent='속도 감소 : ' +  car.speeddown(30);
+	</script>
+</body>
+</html>
