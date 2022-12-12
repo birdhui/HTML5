@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8 /">
+	<title>비교 연산자 활용하기</title>
+</head>
+<body>
+	<script>
+		var x=5;
+		var y="5";
+		var result;
+
+		// 비교 연산
+		result=(x>y);
+		document.write(" x > y : " + result + "<br>");
+
+		// 두 값이 같은지 비교
+		result=(x==y);
+		document.write(" x == y : " + result + "<br>");
+
+		// 두 값과 타입이 같은지 비교
+		result=(x===y);
+		document.write(" x === y : " + result + "<br>");
+
+		// 두 값과 다른지 비교
+		result=(x!=y);
+		document.write(" x != y : " + result + "<br>");
+
+		// 두 값이 다르거나 또는 타입이 다른지 비교
+		result=(x!==y);
+		document.write(" x !== y : " + result + "<br>");
+	</script>
+</body>
+</html>

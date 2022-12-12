@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8 /">
+	<title>일반 논리 연산자 활용하기</title>
+</head>
+<body>
+	<script>
+		var x=5;
+		var y=7;
+		var result;
+
+		// 논리곱
+		result=(x<10 && y>10);
+		document.write(" (x<10 && y>10) : " + result + "<br>");
+
+		// 논리합
+		result=(x<10 || y>10);
+		document.write(" (x<10 || y>10) : " + result + "<br>");
+
+		// 논리 부정
+		result=!(x<10 && y>10);
+		document.write(" !(x<10 && y>10) : " + result + "<br>");
+	</script>
+</body>
+</html>
