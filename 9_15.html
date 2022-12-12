@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Date 객체의 메소드 활용하기 2</title>
+</head>
+<body>
+	<p id="d1"></p>
+	<p id="d2"></p>
+	<p id="d3"></p>
+	<p id="d4"></p>
+	<p id="d5"></p>
+	<p id="d6"></p>
+	<p id="d7"></p>
+	<p id="d8"></p>
+	<p id="d9"></p>
+	
+	<script>
+		var today=new Date();
+		// Mon Dec 12 2022
+		document.getElementById("d1").innerHTML=today.toDateString();
+
+		// 길이가 항상 24자 또는 27자
+		// YYYY-MM-DDTHH:mm:ss:sssZ
+		// 2022-12-12T02:54:06.855Z
+		document.getElementById("d2").innerHTML=today.toISOString();
+
+		// Date객체의 문자열 표현을 반환
+		// 2022-12-12T02:54:06.855Z
+		document.getElementById("d3").innerHTML=today.toJSON();
+
+		// 한국 'ko-KR': 2022.12.12  /  미국 'en-US'
+		// Date 객체의 날짜 부분을 지역의 언어에 맞는 문자열 표현으로 반환
+		document.getElementById("d4").innerHTML=today.toLocaIeDateString();
+
+		// Date 객체의 날짜 부분을 지역의 언어 포맷으로 반환
+		// 11:56:44 AM
+		document.getElementById("d5").innerHTML=today.toLocaIeTimeString();
+
+		// Date 객체의 날짜의 문자열 표현을 지역의 언어에 맞는 형식으로 반환
+		// 12/12/22
+		document.getElementById("d6").innerHTML=today.toLocaIeString();
+
+		// 날짜를 나타내는 문자열
+		// Mon Dec 12 2022 11:58:45 GMT+0900
+		document.getElementById("d7").innerHTML=today.toString();
+
+		// 시간 부분을 사람이 읽을 수 있는 형태로서 미국 영어로 나타내는 문자열
+		// 11:59:29 GMT+0900 (한국 표준시)
+		document.getElementById("d8").innerHTML=today.toTimeString();
+		
+		document.getElementById("d9").innerHTML=today.toUTCString();
+	</script>
+</body>
+</html>

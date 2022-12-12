@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>자동차 속도 조절하기</title>
+</head>
+<body>
+	<p id="upspeed"></p>
+	<p id="downspeed"></p>
+	<script>
+		// text Content
+		// : 웹 문서 안에서 아이디가 "carname"인 요소를 찾아서
+		//   cname 변수에 반환한 후 cname 변수의 내용을 출력한다.
+
+		var car={
+			name: 'Genesis',
+			speed: 100,
+			color: 'white',
+			speedup: function() {
+				return this.speed+10;
+			},
+			speeddown: function() {
+				var low=this.speed-10;
+				return low;
+			}
+		};
+
+		var upspeed=document.getElementById("upspeed");
+		upspeed.textContent='속도 증가 : ' + car.speedup();
+		var downspeed=document.getElementById("downspeed");
+		downspeed.textContent='속도 감소 : ' + car.speeddown();
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>디지털 시계 만들기</title>
+</head>
+<body>
+	<div id="digClock"></div>
+	
+	<script>
+		function digClock() {
+			var today=new Date();
+			var day=today.getMonth()+1 + "월 " + today.getDate() + "일 ";
+			var time=today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";
+			document.getElementById("digClock").innerHTML=day+time;
+		}
+		// setTimeout(digClock, 10000);
+		// setTimeout() = 지연시간 뒤에 실행될 코드를 설정하는 함수
+		// 1000은 1초, 10000은 10초
+		// 지연시키지 않고 싶다면
+		digClock();
+	</script>
+</body>
+</html>
