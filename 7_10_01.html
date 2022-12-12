@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>전역변수와 지역변수 이해하기</title>
+</head>
+<body>
+	<script>
+		var globValue1;		// 전역 변수 선언
+			globValue2;		// 전역 변수 선언, var 생략
+
+		function a() {
+			var locValue;	// 지역 변수 선언
+				globValue;	// 함수 내부에서 var 생략 시 자동 전역 변수로 선언
+			locValue=10;	// 지역 변수 사용
+			document.write("함수 지역 변수 : " + locValue + "<br>");
+		}
+
+		// a();
+		// document.write("함수 지역 변수 : " + locValue + "<br>");
+		// 함수 호출해도 함수 내의 지역변수, 전역변수기 때문에 결과값 출력안됨
+
+		globValue3=10;		// 전역 변수로 재선언
+		var globValue2=10;
+
+		document.write("스크립트 전역 변수 : " + globValue3 + "<br>");
+		document.write("스크립트 전역 변수 : " + globValue2 + "<br>");
+	</script>
+</body>
+</html>

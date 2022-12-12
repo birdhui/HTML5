@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>연산자를 사용하여 데이터 타입 확인하기</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+		var num;	   // 변수 값이 없음
+		var obj=null;  // 객체 변수 값이 없음
+		document.write(typeof 100+"<br>");		// number 정수
+		document.write(typeof 10.5+"<br>");		// number, 정수
+		document.write(typeof "홍길동"+"<br>");  // string 문자 혹은 문자열
+		document.write(typeof true+"<br>");		// boolean 참 혹은 거짓
+		document.write(typeof [1,2,3]+"<br>");	// object 데이터 속성과 값으로 이루어진 집합
+		document.write(typeof {name:'홍길동',  age:25}+"<br>"); // object
+		document.write(typeof num+"<br>");		// undefined 데이터 값이 정해지지 않음 -> num에 값이 없기 때문에
+		document.write(typeof obj+"<br>");		// object 데이터 속성과 값으로 이루어진 집합
+	</script>
+</body>
+</html>
