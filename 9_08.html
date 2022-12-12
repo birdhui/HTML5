@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>속성만 가진 객체 만들기</title>
+</head>
+<body>
+	<p id="var1"></p>
+	<p id="var2"></p>
+	<p id="var3"></p>
+	<script>
+		// getElementById
+		// : 웹 문서 안에서 아이디가 "var"인 요소를 찾아 내용을 출력한다.
+		
+		var car= { name : 'Genesis', speed: 100, color: 'white'};
+		document.getElementById("var1").innerHTML="자동차 이름 : " + car['name'];
+		document.getElementById("var2").innerHTML="자동차 속도 : " + car.speed;
+		document.getElementById("var3").innerHTML="자동차 색상 : " + car.color;
+	</script>
+</body>
+</html>

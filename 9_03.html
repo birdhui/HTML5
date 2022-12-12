@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>무명 함수 호출하기</title>
+</head>
+<body>
+	<script>
+		// 무명함수
+		// 함수 표현식으로 작성하는 방법
+		// -> 무명함수는 함수 선언 전에 호출을 하게 되면 에러가 난다.
+
+		var text1="함수 선언 전 호출 에러";
+		var text2="함수 선언 후 호출만 가능";
+		// printMsg(text1);	   함수 선언 전 호출 에러
+
+		var printMsg=function(msg) {
+			document.write("함수 호출 메시지 : " + msg + "<br>");
+		}
+		printMsg(text2);	// 함수 선언 후 호출 가능
+	</script>
+</body>
+</html>
