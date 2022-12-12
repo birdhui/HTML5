@@ -1,0 +1,20 @@
+<!-- Date 객체의 메소드 활용하기 3 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<div id="digClock"></div>
+	<script>
+		function digClock() {
+			var today=new Date();
+			var day=today.getMonth()+1 + "월 " + today.getDate() + "일 ";
+			var time=today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";
+			document.getElementById("digClock").innerHTML=day+time;
+			setTimeout('digClock()', 1000);
+		}
+		digClock();
+	</script>
+</body>
+</html>

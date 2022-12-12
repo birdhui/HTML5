@@ -1,0 +1,20 @@
+<!-- Date 객체의 메소드 활용하기 1 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<p id="d1"></p>
+	<p id="d2"></p>
+	<p id="d3"></p>
+	<p id="d4"></p>
+	<script>
+		var today=new Date();
+		document.getElementById("d1").innerHTML=today.getFullYear() + "년";
+		document.getElementById("d2").innerHTML=today.getMonth()+1 + "월 " + today.getDate() + "일";
+		document.getElementById("d3").innerHTML=today.getHours() + "시 " + today.getMinutes() + "분 " +	today.getSeconds() + "초";
+		document.getElementById("d4").innerHTML="1970년 1월 1일 이후 현재까지 몇 초가 지났나요?</p>" + today.getTime() + "ms가 지났습니다.";
+	</script>
+</body>
+</html>
