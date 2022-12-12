@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+/*
+ *
+ * CSS CONTETS :
+ *
+ * 01. Web Font
+ * 02. Type Selector Reset
+ * 03. header css
+ * 04. main css
+ * 05. nav css
+ * 06. footer css
+ * 07. viewport meta
+ *
+ */
+
+/* Web Font Load */
+/* Permanent Marker */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* 필기체 */
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+/* 아네모네에어체 */
+@import url('https://webfontworld.github.io/Cafe24Ohsquareair/Cafe24Ohsquareair.css');
+
+/* 써라운드에어체 */
+@import url('https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css');
+
+/* G마켓 미디움 */
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+/* Web Font Load */
+
+
+/* Type Selector Reset */
+html {
+	font-size: 62.5%;	/* 폰트 크기 100% = 16px / 62.5% = 10px */
+}
+
+header {
+	background-image: url('./img/sea.jpg');		/* 배경이미지 */
+	background-repeat: no-repeat;				/*  no-repeat : 이미지를 반복 배열하지 않음 */
+	background-size: cover;						/* 배경 지역이 이미지로 완전히 덮이도록 이미지를 가능한 한 크게 표시 */
+	display: flex;								/*  */
+	height: 68px;
+	font-family: 'Cafe24Ohsquareair';			/* 폰트 종류 */
+	font-weight: lighter;						/* 폰트 굵기 lighter : 기존값보다 얇게 */
+}
+
+main {
+	display: flex;								/* 가로로 정렬하기 */
+	min-height: 100%;
+	flex-direction: column;						/* flex-direction : 컨테이너 내부의 아이템들이 만들어지는 방향 / coulumn : 새로운 아이템 추가 시 위부터 차례로 아래에 붙음 */
+	/* overflow: hidden / disbled */
+}
+
+footer {
+	width: 100%;
+	height: 70px;
+	flex-direction: column; 					/* 요소들을 수평 정렬 - 없어도 class 속성으로 수평 정렬 적용 */
+	font-size: 15px;
+	font-family: 'Cafe24SsurroundAir';
+	text-align: center;							/* 글꼴 정렬 : 중앙으로 */
+}
+
+img {
+	max-width: 100%;
+	height: auto !important;					/* auto !important : 미디어 쿼리에 따라 이미지의 높이가 자동으로 조절되게 적용 */
+}
+/* Type Selector Reset */
+
+
+/* header css */
+.header_img {
+	width: 50px;								/* 넓이 */
+	height: 50px;								/* 높이 */
+	margin-left: 70px;
+	margin-top: 1px;							/* 페이지의 위쪽으로 부터 */
+}
+.header_text {
+	display: flex;
+}
+.header_text ul > li {
+	display: inline-block;
+	list-style: none;							/* 리스트 스타일 (순서를 세는 ol일 경우) : 텍스트만 나오게끔 적용 */
+	color: white;								/* 글꼴 색 */
+	margin-left: 40px;							/* 페이지의 왼쪽으로 부터 */
+	font-size: 23px;							/* 글꼴 사이즈 */
+}
+.header_text a {
+	text-decoration: none;						/* 링크의 밑줄 제거 */
+	color: inherit;								/* 링크의 색상 제거 */
+}
+/* header css */
+
+
+/* main css */
+article {
+	height: 800px;
+	width: 98.9%;
+	margin-bottom: 0px;
+	padding: 10px;
+}
+article > h1 {
+	font-family: 'Homemade Apple', cursive;		/* 폰트 종류, cursive(필기체) */
+	font-size: 85px;
+	text-align: right;
+	margin-right: 10%;
+	margin-top: 3%;
+}
+article > p {
+	font-family: 'Cafe24SsurroundAir';
+	font-size: 30px;
+	text-align: right;
+	margin-right: 10%;
+	line-height: 50px;
+}
+.article_one {
+	background-image: url('./img/sea.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.article_two {
+	background-image: url('./img/pillows.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.article_three {
+	background-image: url('./img/strraw.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* nav 영역 */
+nav {
+	width: 3em;
+	display: none;
+	background: #f2f2f2;
+	color: black;
+	width: 20%;
+	height: 2160px;
+	text-align: center;
+	font-family: 'Homemade Apple', cursive;		/* 폰트 종류, cursive(필기체) */
+	line-height: 20px;
+	justify-content: space-around;
+
+}
+nav > .p_head {
+	font-size: 40px;
+	text-decoration: underline;
+}
+nav > .p {
+	font-size: 25px;
+	font-weight: 100; 							/* lighter : 얇게 -> 적용불가 */
+}
+/* nav 영역 */
+
+/* main css */
+
+
+/* footer css */
+.text_bold {
+	font-weight: bolder;
+}
+.aside_box {
+	border-bottom: 2px solid #00001a;
+	display: inline-block; 						/* li 수평정렬하는 방법 */
+	margin: 13% 0 0 0;
+	line-height: 1px;							/* 줄간격 */
+}
+.area_user_row {
+	display: flex; 								/* flex: 가로 방향으로 배치, 자신이 가진 내용물의 width만큼 차지 */
+}
+.area_user_row ul > li {
+	display: inline-block;						 /* li 수평정렬하는 방법 */
+	list-style: none;
+	margin-left: 30px;
+	font-weight: 300;
+}
+/* footer css */
+
+
+/* viewport */
+.box {
+	width: 1000px;
+	height: 800px;
+}
+
+/* PC */
+@media all and (min-width: 1024px) {  }
+
+/* 태블릿 가로, 세로 */
+@media all and (min-width: 768px) and (max-width: 1023px) {  }
+
+/* 모바일 가로, 세로 */
+@media all and (max-width: 767px) {
+	html { font-size: 40%; }
+	nav {
+		display: block;
+	}
+}
+/* viewport */
+
+
+/*
+	[고급웹프로그래밍]-2022, 홈페이지 개발 일지
+
+	12/3
+	홈페이지 개발 시작
+	- 기본적인 페이지 레이아웃을 잡기 위해 구글에 서칭함
+      참고하기 좋은 사이트 발견(Naver 클론코딩) : https://codingbroker.tistory.com/115
+      레이아웃에 맞춰 개발 (header / main (nav, section, article) / footer)
+
+	- header와 footer 먼저 개발
+
+	- w3s 홈페이지에서 color picker로 조합을 보다
+	  w3s 홈페이지 header처럼 만들고 싶어 시도
+	  header 높이, 색상 글씨색 맞춤
+
+	- w3s 홈페이지 표지 내리다 여러 article을 나눈 게
+	  예뻐보여 section 안에 article을 수직분할은 성공했지만, 수평분할하기 위해 고군분투함
+	  (수평분할 : 한쪽 면에는 글씨를 한쪽에는 그림을 넣으려 했음)
+
+	  수직분할 참고 : https://sso-feeling.tistory.com/185
+
+	- 수직분할로 article마다 배경색을 따로 해주니 볼 만 해짐
+	  (다만, 그림이 없어 밋밋해 맘에 안듦)
+	- 구글로 수직분할을 서칭하다 우연히 광고로
+	  홈페이지를 만들어주는 사이트를 발견함
+
+	  홈페이지 제작 사이트, 아임웹 : https://imweb.me/best_production_list
+
+	  사이트에서 제작한 홈페이지의 표지들을 구경하다
+	  article에 단순 색이 아니라 그림을 넣고 싶다는 생각을 하게 됨
+   -> 배경에 그림을 삽입하니 header랑 nav, footer가 따로 놀며 난리남.
+   -> 생각해 보니 header, nav, footer가 section에 포함되어야 배경그림 위에 표시될 거라 생각 -> 시도함 -> 성공
+
+	  
+
+	12/4
+	홈페이지 표지 완성
+
+	- header에 있는 list들 사이트들 검토
+	  이동되는 사이트 별로 뒤로가기 이미지를 누르면 메인 홈페이지로 돌아오도록 수정
+
+	- 뒤로가기 이미지, header 홈이미지 등 이모티콘 : https://www.flaticon.com/
+   -> 홈페이지에 사용된 픽토그램, 이미지 모두 저작권 상관없는 사이트에서 가져옴
+
+	- 모든 글꼴 수정
+	  웹폰트 사용 참고 사이트 : https://wit.nts-corp.com/2017/02/13/4258
+	  웹폰트 코드 참고 사이트 : https://wess.tistory.com/category
+   -> 문제 : 인터넷 연결 X, 폰트 부분 적용됨
+
+	- 텍스트 정렬
+	  참고 사이트 : https://aenam00.tistory.com/45
+	  텍스트 굵기 설정 참고 사이트 : https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=heartflow89&logNo=221191991830
+
+	- article 배경 이미지
+	  이미지 다운 사이트 : https://unsplash.com/
+	  이미지 설정 참고 사이트 : https://www.google.com/search?sxsrf=ALiCzsZRu9XtUyJmAu_QXtyDKUpgQicvKg:1670135504074&q=html+background+image+%ED%99%94%EB%A9%B4%EC%97%90+%EB%A7%9E%EA%B2%8C&sa=X&ved=2ahUKEwiSu8nLq9_7AhUSPXAKHUFqAKYQ1QJ6BAgzEAE&biw=1825&bih=999&dpr=1
+
+	- 반응형 웹 만드려고 했으나 실패 (규격만 설정해 놓음)
+	  참고 사이트 : https://velog.io/@uni/CSS-%EB%B0%98%EC%9D%91%ED%98%95-%EC%9B%B9%EC%9D%84-%EB%A7%8C%EB%93%A4%EB%95%8C-%EC%96%B4%EB%96%A4-%EB%8B%A8%EC%9C%84%EB%A5%BC-%EC%93%B0%EB%8A%94%EA%B2%8C-%EC%A2%8B%EC%9D%84%EA%B9%8C
+	             : https://nykim.work/85
+
+	- 레이아웃 magin? padding?때문에 여백 생김
+
+	- html, css 파일 나누기 위해 참고한 사이트 : https://mmog-day.tistory.com/
+
+	- 그 외의 기능들은 1학기 웹프로그래밍에서 배운 내용들 복습
+
+
+
+	12/11
+	최종 수정
+
+	- JSP 로그인 파일
+	  a 태그 사용 (같은 파일 안에 있어서 경로지정을 login.jsp로 했는데 안됨) X
+	  form 태그로 action="login.jsp" 오류남
+	  계속 시도했지만 안되서 생각해 본 결과 경로 지정 자체에 문제가 있는 듯해
+
+	  주소 링크 걸듯이 주소 긁어서 a 태그에 복붙했더니 해결됨
+	  참고 사이트 : https://webty.tistory.com/148
+
+   -> 로그인 완료 후 메인 페이지로 다시 돌아올 수 있도록 설정
+	  jsp파일 에서
+	  <h3><a href="file:///C:/Users/User/Desktop/%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/HTML5_2%ED%95%99%EA%B8%B0/1203_webpage_start.html">돌아가려면 이 글씨를 눌러주세요.</a></h3>
+
+	  이런 식으로 파일을 불러왔지만 경로로 이동되지 않아 제외함
+ */
