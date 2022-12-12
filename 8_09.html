@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8 /">
+	<title>요일별 일정을 알려주는 프로그램 만들기</title>
+</head>
+<body>
+	<script>
+		var text;
+		var week=new Date().getDay();	// 0(일요일) ~ 6(토요일)
+
+		switch(week) {
+		case 1:
+		case 2:
+			text="HTML5";
+			break;
+
+		case 3:
+		case 4:
+			text="자바스크립트";
+			break;
+
+		case 5:
+		case 6:
+			text="영어";
+			break;
+
+		case 0:
+
+		default:
+			text="수영";
+		}
+		document.write("오늘은 <b>" + text + "</b> 학습하는 날입니다. <p/>");
+	</script>
+</body>
+</html>

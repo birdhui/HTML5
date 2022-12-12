@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>기본 함수 호출하기</title>
+</head>
+<body>
+	<script>
+		// 기본함수
+		// 일반적인 방법
+		// -> 함수를 선언 전에 호출해도 정상적으로 출력된다.
+		
+		var text1="함수 선언 전 호출";
+		var text2="함수 선언 후 호출";
+		printMsg(text1);	// 함수 선언 전 호출
+
+		function printMsg(msg) {	// 함수 선언
+			document.write("함수 호출 메시지 : " + msg + "<br>");
+		}
+		printMsg(text2);	// 함수 선언 후 호출
+	</script>
+</body>
+</html>
